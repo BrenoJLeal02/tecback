@@ -10,10 +10,14 @@ import java.util.List;
 
 @Repository
 public interface FilmeRepository extends JpaRepository<Filme, Long> {
+//    @Query("select f from Filme f where f.id=: id")
+//    List<Filme> findbyId(Long id);
+//    @Query("select f from Filme f where f.anoLancamento=:ano")
+//    List<Filme> findbyAnoLancamento(@Param("ano") Integer ano);
+//    @Query("SELECT f FROM Filme f WHERE f.titulo LIKE %:titulo%")
+//    List<Filme> findbyTitulo(String titulo);
+//    List<Filme> findbyAnoLancamentoAndTitulo(Integer ano, String titulo);
+//    @Query("SELECT f FROM Filme f WHERE f.titulo LIKE %:titulo%")
+//    List<Filme> buscarPorTitulo(@Param("titulo") String titulo);
 
-    @Query("SELECT f FROM Filme f WHERE f.titulo LIKE %:titulo%")
-    List<Filme> buscarPorTitulo(@Param("titulo") String titulo);
-
-    @Query("SELECT f FROM Filme f WHERE f.anoLancamento = :ano")
-    List<Filme> buscarPorAno(@Param("ano") int ano);
 }

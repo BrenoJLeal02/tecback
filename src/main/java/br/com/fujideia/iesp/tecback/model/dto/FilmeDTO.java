@@ -16,5 +16,6 @@ public class FilmeDTO {
     private DiretorDTO diretor;
     private List<AtorDTO> atores;
     private List<GeneroDTO> generos;
+    private List<ProdutorDTO> produtores;
 }
 
